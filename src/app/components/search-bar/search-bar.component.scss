@@ -1,0 +1,21 @@
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    margin: auto;
+
+    .form-control {
+        flex: 1;
+        border-radius: 1.5625rem;
+        padding: .625rem .9375rem;
+    }
+
+    .btn {
+        border-radius: 50%;
+        width: 2.5rem;
+        height: 2.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

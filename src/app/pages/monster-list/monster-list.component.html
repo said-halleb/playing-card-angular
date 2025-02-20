@@ -1,4 +1,5 @@
-<!-- <div class="container mt-3">
+<div class="container mt-3">
+    <app-slider></app-slider>
     <div class="row">
         <div class="col-12">
             <app-search-bar [(search)]="search"></app-search-bar>
@@ -10,7 +11,7 @@
     </div>
     <div class="d-flex justify-content-center mt-3 mb-2">
         <span *ngIf="filteredMonsters().length==0">No monsters found</span>
-        <span *ngIf="filteredMonsters().length>0" class="badge btn btn-info m-2">Monsters Found {{filteredMonsters().length}}</span>
+        <span *ngIf="filteredMonsters().length>0" class="badge btn btn-info m-2 p-3">Monsters Found {{filteredMonsters().length}}</span>
     </div>
-</div> -->
-<router-outlet></router-outlet>
+</div>
+<app-footer />
