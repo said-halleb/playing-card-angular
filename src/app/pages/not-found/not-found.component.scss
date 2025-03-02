@@ -1,33 +1,40 @@
-.not-found-container {
+@import 'variables';
+
+.not-found {
     height: 100vh;
-    background: linear-gradient(to right, #6a11cb, #2575fc);
-    color: white;
+    background: linear-gradient(to right, $primary-color, $secondary-color);
+    color: $text-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 
-    .error-code {
-        font-size: 8rem;
+    &__error-code {
+        font-size: $font-size-large;
         font-weight: bold;
-        animation: pulse 1.5s infinite alternate;
+        animation: pulse $animation-duration infinite alternate;
     }
 
-    .error-message {
-        font-size: 2rem;
+    &__error-message {
+        font-size: $font-size-medium;
         font-weight: bold;
-        margin-bottom: 10px;
+        margin-bottom: $spacing-small;
     }
 
-    .error-description {
-        font-size: 1.2rem;
-        max-width: 500px;
+    &__error-description {
+        font-size: $font-size-small;
+        max-width: 31.25rem;
     }
 
-    .btn-primary {
-        padding: 10px 20px;
-        font-size: 1.2rem;
-        border-radius: 30px;
+    &__button {
+        padding: $spacing-small $spacing-medium;
+        font-size: $font-size-small;
+        border-radius: $spacing-large;
         transition: 0.3s ease-in-out;
 
         &:hover {
-            background-color: #1a47a1;
+            background-color: $button-hover-color;
             transform: scale(1.05);
         }
     }

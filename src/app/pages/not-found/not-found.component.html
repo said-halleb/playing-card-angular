@@ -1,11 +1,10 @@
-<div class="not-found-container d-flex flex-column justify-content-center align-items-center text-center">
-    <h1 class="error-code">404</h1>
-    <h2 class="error-message">Oops! Page not found</h2>
-    <p class="error-description">
-          Sorry, the page you are looking for does not exist or has been moved.  
+<div class="not-found">
+    <h1 class="not-found__error-code">404</h1>
+    <h2 class="not-found__error-message">Oops! Page not found</h2>
+    <p class="not-found__error-description">
+        Sorry, the page you are looking for does not exist or has been moved.
     </p>
-    <a (click)="navigateToHome()" class="btn btn-primary mt-3">
+    <a (click)="navigateToHome()" class="not-found__button btn btn-primary">
         <i class="bi bi-arrow-left"></i> Back to home page
     </a>
 </div>
-
