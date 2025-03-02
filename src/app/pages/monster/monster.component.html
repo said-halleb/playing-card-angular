@@ -1,1 +1,25 @@
-<h1>test</h1>
+<div class="monster-card">
+  <h2 class="monster-card__title">{{ monster.name }}</h2>
+  <p class="monster-card__description">{{ monster.description }}</p>
+
+  <img [src]="monster.imageUrl" alt="Monster Image" class="monster-card__image">
+
+  <p class="monster-card__health">
+    Santé : <span [class.text-danger]="monster.health <= 20">{{ monster.health }}</span>
+  </p>
+
+  <button class="monster-card__button btn btn-danger" (click)="takeDamage()" [disabled]="!monster.isAlive">
+    Infliger des dégâts
+  </button>
+
+  <div class="monster-card__name-update mt-3">
+    <label for="monsterName" class="form-label">Changer le nom du monstre :</label>
+    <input
+      type="text"
+      class="form-control"
+      id="monsterName"
+      [(ngModel)]="monsterName"
+      (ngModelChange)="updateMonsterName($event)"
+    />
+  </div>
+</div>

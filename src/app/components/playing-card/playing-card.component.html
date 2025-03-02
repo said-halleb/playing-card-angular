@@ -1,9 +1,9 @@
-<div class="card playing-card" [style.background-color]="backgroundColor()">
-    <img [src]="monsterTypeImage()" class="card-img-top" alt="Carte">
-    <div class="card-body">
-        <h5 class="card-title">{{monster().name}}</h5>
-        <h4>{{monster().value}}</h4>
-        <p class="card-text">{{monster().description}}</p>
-        <button class="btn bg-dark text-white">{{monster().valueBtn}}</button>
+<div class="playing-card" [style.background-color]="backgroundColor()">
+    <img [src]="monsterTypeImage()" class="playing-card__image" alt="Carte">
+    <div class="playing-card__body">
+        <h5 class="playing-card__title">{{monster().name}}</h5>
+        <h4 class="playing-card__value">{{monster().value}}</h4>
+        <p class="playing-card__description">{{monster().description}}</p>
+        <button class="playing-card__button btn bg-dark text-white">{{monster().valueBtn}}</button>
     </div>
 </div>

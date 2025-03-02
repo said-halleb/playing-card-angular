@@ -1,9 +1,7 @@
 <div class="search-bar position-relative m-3">
-    <input type="text" class="form-control" placeholder="Search..."    [ngModel]="search" 
-        (ngModelChange)="updateSearch($event)" />
-    <button class="btn bg-dark text-white position-absolute top-0 end-0"  >
-        <i class="bi bi-search"></i>
+    <input type="text" class="search-bar__input form-control" placeholder="Search..." 
+           [ngModel]="search" (ngModelChange)="updateSearch($event)" />
+    <button class="search-bar__button btn bg-dark text-white position-absolute top-0 end-0">
+        <i class="search-bar__icon bi bi-search"></i>
     </button>
-
 </div>
-
